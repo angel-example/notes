@@ -9,7 +9,7 @@ configureBefore(Angel app) async {
 
 /// Put your app routes here!
 configureRoutes(Angel app) async {
-  app.get('/', (req, ResponseContext res) => res.render('hello'));
+  // app.get('/', (req, ResponseContext res) => res.render('hello'));
 }
 
 configureAfter(Angel app) async {
@@ -51,7 +51,7 @@ configureAfter(Angel app) async {
   // Ideally you'll run this on a `multiserver` instance, but if not,
   // feel free to knock yourself out!
   //
-  // app.responseFinalizers.add(gzip());
+  app.responseFinalizers.add(gzip());
 }
 
 configureServer(Angel app) async {

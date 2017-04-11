@@ -5,16 +5,15 @@ import 'package:angel_framework/common.dart';
 class User extends Model {
   @override
   String id;
-  String email, username, password, salt;
+  String googleId, email, name;
   @override
   DateTime createdAt, updatedAt;
 
   User(
       {this.id,
+      this.googleId,
       this.email,
-      this.username,
-      this.password,
-      this.salt,
+      this.name,
       this.createdAt,
       this.updatedAt});
 }

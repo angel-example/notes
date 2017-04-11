@@ -2,10 +2,13 @@ description: "An easily-extensible web server framework in Dart."
 homepage: "https://github.com/angel-dart/angel"
 name: "notes"
 publish_to: "none"
-dependencies: 
+dependencies:
+  angel_auth_google: ^1.0.0
   angel_common: "^1.0.0"
   angel_configuration: "^1.0.0"
   angel_multiserver: "^1.0.0"
+  angel_security: ^1.0.0
+  html_builder: ^1.0.0
 dev_dependencies: 
   grinder: "^0.8.0"
   http: "^0.11.3"

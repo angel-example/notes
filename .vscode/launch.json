@@ -5,19 +5,13 @@
             "name": "Start Server",
             "type": "dart-cli",
             "request": "launch",
-            "cwd": "${workspaceRoot}",
-            "debugSettings": "${command:debugSettings}",
-            "program": "${workspaceRoot}/bin/server.dart",
-            "args": []
+            "program": "${workspaceRoot}/bin/server.dart"
         },
         {
             "name": "Start Multiserver",
             "type": "dart-cli",
             "request": "launch",
-            "cwd": "${workspaceRoot}",
-            "debugSettings": "${command:debugSettings}",
-            "program": "${workspaceRoot}/bin/multi_server.dart",
-            "args": []
+            "program": "${workspaceRoot}/bin/multi_server.dart"
         }
     ]
 }
